@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Pro HEIC converter V1.2"
+
 echo "Enter the quality of output HEIC files in percents (press Enter for default: 75%)"
 read quality
 if [ -z "$quality" ]; then
