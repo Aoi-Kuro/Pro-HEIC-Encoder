@@ -9,7 +9,7 @@ You may enter:
 1) Quality [0; 100]
 The higher the quality the better image will look and less information will be lost
 
-2) Preset {ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow, placebo} (press Enter for default: medium)
+2) Preset {ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow, placebo}
 The slower the preset the better will be final resut since code has more time to check all the encodeing patterns
 
 3) Preview size
