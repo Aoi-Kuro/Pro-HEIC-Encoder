@@ -1,5 +1,5 @@
 # Pro-HEIC-Encoder
-Bash HEIC converter with extended settings
+Multithread bash HEIC converter with extended settings
 
 The code is a bash script. It does two main things:
 1) Converts JPG and PNG into the HEIC
