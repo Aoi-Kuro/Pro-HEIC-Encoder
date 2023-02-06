@@ -5,9 +5,38 @@ The code is a bash script. It does two main things:
 1) Converts JPG and PNG into the HEIC
 2) It copies all EXIF metadata and changes modify date of HEIC file
 
-It prompts the user to enter the quality of the HEIC output files (default is 75%) and the preset used for encoding (default is "medium").
-It also asks the user to enter the longer side length of the preview in pixels, and the number of cores in the device (default is 4).
-The script converts image files of types PNG, png, JPG, jpg, JPEG, and jpeg to HEIC format using the heif-enc command and saves the encoded files with a .HEIC extension.
-The metadata from the original files is then copied to the HEIC files using the exiftool command.
-Finally, the script asks the user if they want to keep the backup files, and if the answer is "n", it removes the backup files.
-The script ends by printing "Work has been finished."
+You may enter:
+1) Quality [0; 100]
+The higher the quality the better image will look and less information will be lost
+
+2) Preset {ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow, placebo} (press Enter for default: medium)
+The slower the preset the better will be final resut since code has more time to check all the encodeing patterns
+
+3) Preview size
+Creates to help OS show you a thumb of file without fully decoding it
+
+4) Number of cores
+Decides how much images will be encoded at the same time (grater - not better)
+
+# What should be installed
+1) libheif-examples
+2) exiftool
+3) libde265-dev
+You may use this lines on Linux to install 1st and 3rd lib:
+
+sudo apt update
+
+sudo apt install libde265-dev
+
+sudo apt-get update
+
+sudo apt-get install libheif-examples
+
+# How to use
+Just put the file in the same folder with the files to encode. Open console and run code (usually you must write "bash HEIC.sh")
+
+# FAQ
+1) Is it possilbe to use this code on Windows?
+- Of course yes. You just have to install Ubuntu or another subsystem on your Windows. Read on the internet how to do this
+2) Will this code be developed in future?
+- Yes. Write what functional you want to see and I will soon add it!
