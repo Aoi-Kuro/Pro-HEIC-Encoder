@@ -22,7 +22,8 @@ Decides how much images will be encoded at the same time (grater - not better)
 1) libheif-examples
 2) exiftool
 3) libde265-dev
-You may use this lines on Linux to install 1st and 3rd lib:
+4) 
+You may use this lines on Linux to install libs:
 
 
 sudo apt install libde265-dev
