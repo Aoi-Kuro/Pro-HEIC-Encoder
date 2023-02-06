@@ -40,3 +40,15 @@ Just put the file in the same folder with the files to encode. Open console and 
 - Of course yes. You just have to install Ubuntu or another subsystem on your Windows. Read on the internet how to do this
 2) Will this code be developed in future?
 - Yes. Write what functional you want to see and I will soon add it!
+
+# ChatGPT description:
+
+This is a bash script that allows you to convert image files in your current directory from JPEG or PNG to HEIC format, while preserving their metadata.
+
+You will be prompted to specify the quality of the output HEIC files in percent, with a default value of 75% if no input is provided. You can also choose from one of ten preset options for the encoding process, with a default of "medium". The number of cores on your device can also be inputted to affect the number of threads used during encoding. If no value is provided, the script will assume 4 cores.
+
+The script uses the heif-enc command to convert each image file, and if desired, you can specify the longer side preview length in pixels to create a preview for each HEIC file. The metadata of the original files will then be copied over to the HEIC files using exiftool. The file modification time will also be updated to match the date and time the photo was taken.
+
+At the end of the script, you will be prompted to keep or delete backup files created during the conversion process. If you choose to delete the backups, the script will remove all files with the "_original" extension.
+
+This script requires the heif-enc and exiftool commands to be installed on your system.
