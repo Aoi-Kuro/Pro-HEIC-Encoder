@@ -24,11 +24,10 @@ Decides how much images will be encoded at the same time (grater - not better)
 3) libde265-dev
 You may use this lines on Linux to install 1st and 3rd lib:
 
-sudo apt update
 
 sudo apt install libde265-dev
 
-sudo apt-get update
+sudo apt-get install exiftool
 
 sudo apt-get install libheif-examples
 
